@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  TmplBook
+//  stack1test
 //
 //  Created by 中野 俊亮 on 11/08/27.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
