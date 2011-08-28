@@ -50,7 +50,7 @@ T Stack<T>::top () const
     return elems.back();      // return copy of last element
 }
 
-//ポインタに対するStackのデストラクタ特殊化
+//ポインタに対するStackの特殊化
 template <typename T>
 class Stack<T*>
 {
