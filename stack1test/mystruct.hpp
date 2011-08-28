@@ -9,6 +9,9 @@
 #ifndef TmplBook_mystruct_h
 #define TmplBook_mystruct_h
 
-
+struct mystruct{
+    int a;
+    double b;
+};
 
 #endif

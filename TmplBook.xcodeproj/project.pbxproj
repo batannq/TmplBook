@@ -7,26 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0453E191408BC4000F2ADE6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0453E181408BC4000F2ADE6 /* main.cpp */; };
-		B0453E1B1408BC4000F2ADE6 /* TmplBook.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0453E1A1408BC4000F2ADE6 /* TmplBook.1 */; };
 		B0453E291408BCD600F2ADE6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0453E281408BCD600F2ADE6 /* main.cpp */; };
 		B0453E2B1408BCD600F2ADE6 /* stack1test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0453E2A1408BCD600F2ADE6 /* stack1test.1 */; };
+		B0453E321408C2D300F2ADE6 /* libboost_unit_test_framework.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0453E311408C2D300F2ADE6 /* libboost_unit_test_framework.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B0453E121408BC4000F2ADE6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				B0453E1B1408BC4000F2ADE6 /* TmplBook.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 		B0453E231408BCD600F2ADE6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
@@ -37,26 +26,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0453E141408BC4000F2ADE6 /* TmplBook */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TmplBook; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0453E181408BC4000F2ADE6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		B0453E1A1408BC4000F2ADE6 /* TmplBook.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TmplBook.1; sourceTree = "<group>"; };
 		B0453E251408BCD600F2ADE6 /* stack1test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = stack1test; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0453E281408BCD600F2ADE6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B0453E2A1408BCD600F2ADE6 /* stack1test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = stack1test.1; sourceTree = "<group>"; };
+		B0453E2F1408BD0300F2ADE6 /* stack1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack1.hpp; sourceTree = "<group>"; };
+		B0453E311408C2D300F2ADE6 /* libboost_unit_test_framework.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_unit_test_framework.dylib; path = ../../../../../usr/local/lib/libboost_unit_test_framework.dylib; sourceTree = "<group>"; };
+		B0453E331408C55500F2ADE6 /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = usr/local/lib/libboost_program_options.dylib; sourceTree = SDKROOT; };
+		B0D8EBE51408CF2F00785601 /* mystruct.hpp */ = {isa = PBXFileReference; fileEncoding = 4; path = mystruct.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B0453E111408BC4000F2ADE6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B0453E221408BCD600F2ADE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0453E321408C2D300F2ADE6 /* libboost_unit_test_framework.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +50,8 @@
 		B0453E091408BC3F00F2ADE6 = {
 			isa = PBXGroup;
 			children = (
-				B0453E171408BC4000F2ADE6 /* TmplBook */,
+				B0453E331408C55500F2ADE6 /* libboost_program_options.dylib */,
+				B0453E311408C2D300F2ADE6 /* libboost_unit_test_framework.dylib */,
 				B0453E271408BCD600F2ADE6 /* stack1test */,
 				B0453E151408BC4000F2ADE6 /* Products */,
 			);
@@ -75,26 +60,18 @@
 		B0453E151408BC4000F2ADE6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0453E141408BC4000F2ADE6 /* TmplBook */,
 				B0453E251408BCD600F2ADE6 /* stack1test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0453E171408BC4000F2ADE6 /* TmplBook */ = {
-			isa = PBXGroup;
-			children = (
-				B0453E181408BC4000F2ADE6 /* main.cpp */,
-				B0453E1A1408BC4000F2ADE6 /* TmplBook.1 */,
-			);
-			path = TmplBook;
-			sourceTree = "<group>";
-		};
 		B0453E271408BCD600F2ADE6 /* stack1test */ = {
 			isa = PBXGroup;
 			children = (
+				B0453E2F1408BD0300F2ADE6 /* stack1.hpp */,
 				B0453E281408BCD600F2ADE6 /* main.cpp */,
 				B0453E2A1408BCD600F2ADE6 /* stack1test.1 */,
+				B0D8EBE51408CF2F00785601 /* mystruct.hpp */,
 			);
 			path = stack1test;
 			sourceTree = "<group>";
@@ -102,23 +79,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B0453E131408BC4000F2ADE6 /* TmplBook */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B0453E1E1408BC4000F2ADE6 /* Build configuration list for PBXNativeTarget "TmplBook" */;
-			buildPhases = (
-				B0453E101408BC4000F2ADE6 /* Sources */,
-				B0453E111408BC4000F2ADE6 /* Frameworks */,
-				B0453E121408BC4000F2ADE6 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TmplBook;
-			productName = TmplBook;
-			productReference = B0453E141408BC4000F2ADE6 /* TmplBook */;
-			productType = "com.apple.product-type.tool";
-		};
 		B0453E241408BCD600F2ADE6 /* stack1test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0453E2C1408BCD600F2ADE6 /* Build configuration list for PBXNativeTarget "stack1test" */;
@@ -153,21 +113,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0453E131408BC4000F2ADE6 /* TmplBook */,
 				B0453E241408BCD600F2ADE6 /* stack1test */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B0453E101408BC4000F2ADE6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0453E191408BC4000F2ADE6 /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B0453E211408BCD600F2ADE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,8 +150,11 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -219,28 +173,18 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		B0453E1F1408BC4000F2ADE6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B0453E201408BC4000F2ADE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		B0453E2D1408BCD600F2ADE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = "~/Desktop/TmplBook/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +192,7 @@
 		B0453E2E1408BCD600F2ADE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = "~/Desktop/TmplBook/bin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -264,14 +209,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0453E1E1408BC4000F2ADE6 /* Build configuration list for PBXNativeTarget "TmplBook" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B0453E1F1408BC4000F2ADE6 /* Debug */,
-				B0453E201408BC4000F2ADE6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		B0453E2C1408BCD600F2ADE6 /* Build configuration list for PBXNativeTarget "stack1test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -279,6 +216,7 @@
 				B0453E2E1408BCD600F2ADE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

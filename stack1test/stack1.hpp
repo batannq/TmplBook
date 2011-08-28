@@ -50,4 +50,53 @@ T Stack<T>::top () const
     return elems.back();      // return copy of last element
 }
 
+//ポインタに対するStackのデストラクタ特殊化
+template <typename T>
+class Stack<T*>
+{
+private:
+    std::vector<T*> elems;     // elements
+
+public:
+    void push(T* const&);      // push element
+    void pop();                // pop element
+    T* top() const;            // return top element
+    bool empty() const {       // return whether the stack is empty
+        return elems.empty();
+    }
+    ~Stack<T*>();
+};
+
+
+template <typename T>
+void Stack<T*>::push (T* const& elem)
+{
+    elems.push_back(elem);    // append copy of passed elem
+}
+
+template<typename T>
+void Stack<T*>::pop ()
+{
+    if (elems.empty()) {
+        throw std::out_of_range("Stack<>::pop(): empty stack");
+    }
+    elems.pop_back();         // remove last element
+}
+
+template <typename T>
+T* Stack<T*>::top () const
+{
+    if (elems.empty()) {
+        throw std::out_of_range("Stack<>::top(): empty stack");
+    }
+    return elems.back();      // return copy of last element
+}
+
+template <typename T>
+Stack<T*>::~Stack() {
+    for(int i=0; i<elems.size(); i++){
+        delete elems.at(i);
+    }
+}
+
 #endif
